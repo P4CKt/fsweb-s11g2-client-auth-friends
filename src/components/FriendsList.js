@@ -1,14 +1,13 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { axiosWithAuth } from "./axiosWithAuth";
 import { FriendsContext } from "../Contexts/UserContext";
-import { useHistory } from "react-router-dom";
+
 import { NavLink } from "react-router-dom";
 
 export default function FriendsList() {
   const { friends, setFriends } = useContext(FriendsContext);
-  const history = useHistory();
+
   useEffect(() => {
-    // localStorage.getItem("token")
     axiosWithAuth()
       .get("http://localhost:9000/api/friends")
       .then((res) => {

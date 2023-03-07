@@ -10,6 +10,7 @@ import Logout from "./components/Logout";
 import { useHistory } from "react-router-dom";
 import Detail from "./components/Detail";
 function App() {
+  const history = useHistory();
   const [user, setUser] = useState({
     username: "",
     password: "",
@@ -19,7 +20,7 @@ function App() {
     name: "",
     email: "",
   });
-  const history = useHistory();
+
   useEffect(() => {
     history.push("/login");
   }, []);
