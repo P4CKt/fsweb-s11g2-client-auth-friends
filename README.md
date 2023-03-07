@@ -31,47 +31,47 @@ Tüm karakter nesneleri aşağıdaki biçimdedir:
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [+] Forklayın.
+- [+] Klonlayın
+- [+] Ana dizine gidin
+- [+] `npm install`
+- [+] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
 #### Login (kullanıcı girişi) bileşenini oluşturun
 
-- [ ] Örnekteki login sayfası gibi [mockup](./designs/login_mockup.png) bir login bileşeni oluşturun.
-- [ ] `App.js` içine, `/` ya da `/login` ziyaret edildiğinde bu bileşeni gösteren bir route ekleyin
-- [ ] Login formu gönderildiğinde, döndürülen tokeni localStorage e kaydedin ve sayfayı FriendsList sayfasına yönlendirin
+- [+] Örnekteki login sayfası gibi [mockup](./designs/login_mockup.png) bir login bileşeni oluşturun.
+- [+] `App.js` içine, `/` ya da `/login` ziyaret edildiğinde bu bileşeni gösteren bir route ekleyin
+- [+] Login formu gönderildiğinde, döndürülen tokeni localStorage e kaydedin ve sayfayı FriendsList sayfasına yönlendirin
 
 #### FriendsList bileşenini oluşturun
 
-- [ ] Örnektesi `FriendsList` [mockup](./designs/friendslist_mockup.png) gibi bir bileşen oluşturun.
-- [ ] Bileşen bağlandığında, tüm karakterleri gönderen bir API call oluşturun. Bunun korumalı bir route olduğunu unutmayın.
-- [ ] `App.js` içinde, `/friends` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin
-- [ ] Login bileşeninize, oluşturduğunuz `FriendsList` bileşenine yönlendirme kabiliyeti ekleyin.
+- [+] Örnektesi `FriendsList` [mockup](./designs/friendslist_mockup.png) gibi bir bileşen oluşturun.
+- [+] Bileşen bağlandığında, tüm karakterleri gönderen bir API call oluşturun. Bunun korumalı bir route olduğunu unutmayın.
+- [+] `App.js` içinde, `/friends` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin
+- [+] Login bileşeninize, oluşturduğunuz `FriendsList` bileşenine yönlendirme kabiliyeti ekleyin.
 
 #### addFriends bileşeni oluşturun
 
-- [ ] Örnekteki `AddFriend` [mockup](./designs/addfriends_mockup.png) gibi bir karakter ekleme bileşeni oluşturun.
-- [ ] Tüm karakter özellikleri için inputlar ve bir submit butonu içeren bir bileşen olmalı
-- [ ] Form gönderildiğinde, uygun api uç noktasına yeni karakter datanızı gönderen bir sorgu atın. Bunun korumalı bir route olduğunu unutmayın.
-- [ ] `App.js` içinde, `/friends/add` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin.
+- [+] Örnekteki `AddFriend` [mockup](./designs/addfriends_mockup.png) gibi bir karakter ekleme bileşeni oluşturun.
+- [+] Tüm karakter özellikleri için inputlar ve bir submit butonu içeren bir bileşen olmalı
+- [+] Form gönderildiğinde, uygun api uç noktasına yeni karakter datanızı gönderen bir sorgu atın. Bunun korumalı bir route olduğunu unutmayın.
+- [+] `App.js` içinde, `/friends/add` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin.
 
 #### Logout butonu oluşturun
 
-- [ ] Uygulamanızdan çıkış yapmanızı sağlayan bir logout bileşeni oluşturun.
-- [ ] Bu bileşen logout uç noktasına sorgu atacak ve local storageda kayıtlı tokenı silecek.
-- [ ] `App.js` içinde , `/logout` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin.
-- [ ] `App.js` içinde, kullanıcının logout, karakter listesi ve karakter ekleme sayfalarına ulaşabileceği navigasyonlar oluşturun.
+- [+] Uygulamanızdan çıkış yapmanızı sağlayan bir logout bileşeni oluşturun.
+- [+] Bu bileşen logout uç noktasına sorgu atacak ve local storageda kayıtlı tokenı silecek.
+- [+] `App.js` içinde , `/logout` ziyaret edildiğinde bu bileşeni görüntüleyen bir route ekleyin.
+- [+] `App.js` içinde, kullanıcının logout, karakter listesi ve karakter ekleme sayfalarına ulaşabileceği navigasyonlar oluşturun.
 
 #### /friends ve /friends/add routlarını korumak
 
-- [ ] Eğer local storage a kayıtlı bir token yoksa bu url ler ziyaret edildiğinde login routeuna sayfa yönlendirilsin.
+- [+] Eğer local storage a kayıtlı bir token yoksa bu url ler ziyaret edildiğinde login routeuna sayfa yönlendirilsin.
 
 ### Görev 3: Esnek görevler
 
-- [ ] axiosWithAuth kullanarak korumalı uç noktalara erişmeyi deneyin.
-- [ ] Karakterlerin bilgilerini göstermeye yarayan bir route oluşturun. Karakter id sini `useParams` kullanarak alın.
-- [ ] Uygulamayı stilleyin.
+- [+] axiosWithAuth kullanarak korumalı uç noktalara erişmeyi deneyin.
+- [+] Karakterlerin bilgilerini göstermeye yarayan bir route oluşturun. Karakter id sini `useParams` kullanarak alın.
+- [+] Uygulamayı stilleyin.
